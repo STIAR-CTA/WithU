@@ -1,4 +1,4 @@
-# WithU
+
 
 ## Get started
 
@@ -31,5 +31,3 @@
    git remote add origin https://github.com/STIAR-CTA/WithU.git
    git push -u origin master# WithU
    ```
-# WithU
-# WithU
