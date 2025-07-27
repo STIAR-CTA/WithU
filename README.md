@@ -14,15 +14,18 @@
    npx expo start
    ```
 
+3. Start Web App
+
+   ```bash
+   npm start
+   ```
+
 ## Posh GitHub
 
-    echo "# WithU" >> README.md
-
-    git init
-    git add README.md
-
-    git commit -m "first commit"
-    git branch -M master
-
-    git remote add origin https://github.com/STIAR-CTA/WithU.git
-    git push -u origin master# WithU
+echo "# WithU" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/STIAR-CTA/WithU.git
+git push -u origin master# WithU
