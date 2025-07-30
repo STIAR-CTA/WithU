@@ -23,6 +23,8 @@
 
    ```bash
    git status
+   ```
+   ```bash
    git add .
    ```
    ```bash
