@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     fontFamily: "VAG",
   },
   title: {
-    fontSize: 32,
+    fontSize: 56,
     fontFamily: "VAG",
   },
   subtitle: {
