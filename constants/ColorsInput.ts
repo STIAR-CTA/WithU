@@ -1,10 +1,14 @@
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffffff',
+    inputBackground: '#FFFFFF',
+    inputText: '#000000',
+    inputPlaceholder: '#000000ff',
+    inputBorder: '#000000ff',
   },
   dark: {
-    text: '#803CFF',
-    background: '#000000',
-  },
+    inputBackground: '#000000ff',
+    inputText: '#803CFF',
+    inputPlaceholder: '#803CFF',
+    inputBorder: '#803CFF',
+  }
 };

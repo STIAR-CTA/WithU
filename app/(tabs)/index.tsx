@@ -1,21 +1,13 @@
 import Login from "@/components/ui/login";
 import Barbox from "@/layout/BarBox/barbox";
-
-import { StyleSheet, View } from "react-native";
+import { View } from "react-native";
 
 export default function LogIn() {
   return (
-    <View style={styles.box}>   
+    <View style={{ flex: 1 }}>   
       <Barbox/>
       <Login/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-    box: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

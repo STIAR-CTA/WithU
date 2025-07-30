@@ -1,4 +1,7 @@
 import { ThemedView } from '@/components/ThemedView';
+import EmailInput from '@/layout/Input/Email/Email';
+import NameInput from '@/layout/Input/Name/Name';
+import PasswordInput from '@/layout/Input/Password/Password';
 
 import Version from '@/layout/Version/version';
 import { StyleSheet } from "react-native";
@@ -6,8 +9,10 @@ import { StyleSheet } from "react-native";
 
 const Login = () => {
     return (
-        <ThemedView style={styles.loader}>
-            {/* <NameInput/> */}
+        <ThemedView style={styles.box}>
+            <NameInput/>
+            <EmailInput/>
+            <PasswordInput/>
             <Version/>
         </ThemedView>
         
@@ -15,15 +20,18 @@ const Login = () => {
 };
 
 const styles = StyleSheet.create({
-    loader: {
+    box: {
         width: "100%",
         height: "94%",
-        bottom: 0,
+
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        position: "absolute",
+
         borderTopRightRadius: 50,
         borderTopLeftRadius: 50,
-        position: "absolute",
-        alignItems: "center",
-        justifyContent: "center",
+        bottom: 0,
     },
 });
 
