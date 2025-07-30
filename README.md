@@ -22,18 +22,9 @@
 ## Push GitHub
 
    ```bash
-   git init
-   ```
-
-   ```bash
    git status
    git add .
    ```
-
-   ```bash
-   git remote -v
-   ```
-
    ```bash
    git commit -m "initial commit"
    git push -u origin master
