@@ -22,8 +22,23 @@
 ## Push GitHub
 
    ```bash
+   git status
+   git add .
+   ```
+   
+   ```bash
+   git remote -v
+   ```
+
+   ```bash
    git init
+   ```
+
+   ```bash
    git add README.md
+   ```
+
+   ```bash
    git commit -m "first commit"
    git branch -M master
    git remote add origin https://github.com/STIAR-CTA/WithU.git
