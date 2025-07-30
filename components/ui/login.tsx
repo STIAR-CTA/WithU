@@ -1,5 +1,5 @@
 import { ThemedView } from '@/components/ThemedView';
-import NameInput from '@/layout/Input/Name_Input/Name';
+
 import Version from '@/layout/Version/version';
 import { StyleSheet } from "react-native";
 
@@ -7,7 +7,7 @@ import { StyleSheet } from "react-native";
 const Login = () => {
     return (
         <ThemedView style={styles.loader}>
-            <NameInput/>
+            {/* <NameInput/> */}
             <Version/>
         </ThemedView>
         
