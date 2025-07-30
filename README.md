@@ -6,7 +6,7 @@
    ```bash
    npm install
    ```
-2. Start Web App
+2. Start App
 
    ```bash
    npm start
