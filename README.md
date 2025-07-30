@@ -6,14 +6,7 @@
    ```bash
    npm install
    ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-3. Start Web App
+2. Start Web App
 
    ```bash
    npm start
