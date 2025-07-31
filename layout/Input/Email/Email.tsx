@@ -1,6 +1,6 @@
 import { StyleSheet, View } from "react-native";
 
-import { ThemedInput } from '@/components/ThemedTextInput';
+import { ThemedInput } from '@/components/ThemedInput';
 
 const EmailInput = () => {
     return (
@@ -13,7 +13,7 @@ const EmailInput = () => {
 const styles = StyleSheet.create({
     input: {
     width: "145%",
-    height: "0%",
+    
     alignSelf: "center",
     padding: "8%",
     borderWidth: 2.5,

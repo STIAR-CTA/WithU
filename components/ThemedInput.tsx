@@ -80,10 +80,10 @@ export function ThemedInput({
 
 const styles = StyleSheet.create({
   baseInput: {
-    borderWidth: 1,
-    borderRadius: 8,
-    padding: 6,
+    borderWidth: 0,
+    borderRadius: 0,
+    padding: 0,
     fontSize: 16,
-    minHeight: 48,
+    minWidth: "100%",
   }
 });
