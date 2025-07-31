@@ -50,16 +50,14 @@ export const ThemedButton = ({
 
 const styles = StyleSheet.create({
   button: {
-    flex: 1,
-    paddingVertical: 0,
-    paddingHorizontal: 0,
-    borderRadius: 0,
-    alignItems: 'center',
-    justifyContent: 'center',
-    minWidth: "530%",
+    borderRadius: 50,
+    alignItems: "center",
   },
   text: {
     fontSize: 20,
+    lineHeight: 30,
     fontFamily: "VAG",
+    paddingBottom: 4,
+    margin: 3,
   },
 });

@@ -4,33 +4,29 @@ import NameInput from '@/layout/Input/Name/Name';
 import PasswordInput from '@/layout/Input/Password/Password';
 
 import { StyleSheet, View } from "react-native";
+import LogInCButton from '../Button/LogInCNA';
 
 
 const RegisterC = () => {
     return (
-        <View style={styles.box}>
+        <View style={styles.container}>
             <NameInput/>
             <EmailInput/>
             <PasswordInput/>
             <AcceptButton/>
+            <LogInCButton/>
         </View>
         
     );
 };
 
 const styles = StyleSheet.create({
-    box: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        position: "absolute",
+    container: {
+        top: "10%",
+        gap: 10,
 
-        top: "44%",
 
-        borderTopRightRadius: 50,
-        borderTopLeftRadius: 50,
     },
-
 });
 
 export default RegisterC

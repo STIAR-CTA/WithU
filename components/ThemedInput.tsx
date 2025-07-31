@@ -80,10 +80,13 @@ export function ThemedInput({
 
 const styles = StyleSheet.create({
   baseInput: {
-    borderWidth: 0,
-    borderRadius: 0,
-    padding: 0,
+    borderRadius: 50,
+    borderWidth: 2.5,
     fontSize: 16,
-    minWidth: "100%",
+    lineHeight: 10,
+    fontFamily: "VAG",
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingBottom: 4,
   }
 });
