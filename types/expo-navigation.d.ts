@@ -1,18 +1,13 @@
+
 export type RootStackParamList = {
-  '(tabs)/index': undefined;
-  '(tabs)/register': undefined;
+  'index': undefined;
+  'register': undefined;
+  '404': undefined;
 };
 
-declare module 'expo-router' {
-  export interface Router {
-    push: <T extends keyof RootStackParamList>(
-      route: T,
-      params?: RootStackParamList[T]
-    ) => void;
-    back: () => void;
-    replace: <T extends keyof RootStackParamList>(
-      route: T,
-      params?: RootStackParamList[T]
-    ) => void;
+// Добавляем типы для expo-router
+declare global {
+  namespace ReactNavigation {
+    interface RootParamList extends RootStackParamList {}
   }
 }

@@ -1,19 +1,14 @@
-import { ThemedView } from '@/components/ThemedView';
+import { ScreenContainer } from '@/components/ui/ScreenContainer';
 import Logo from "@/layout/Logo/logo";
 import Version from '@/layout/Version/version';
 
-
-
 const Loader = () => {
     return (
-        <ThemedView>
+        <ScreenContainer>
             <Logo/>
             <Version/>
-        </ThemedView>
-        
+        </ScreenContainer>
     );
 };
-
-
 
 export default Loader

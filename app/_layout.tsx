@@ -4,6 +4,7 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
+import { AppProvider } from '@/contexts/AppContext';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
 export default function RootLayout() {
@@ -13,17 +14,26 @@ export default function RootLayout() {
   });
 
   if (!loaded) {
-
     return null;
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="404" />
-      </Stack>
-      <StatusBar style="inverted" />
-    </ThemeProvider>
+    <AppProvider>
+      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        <Stack 
+          screenOptions={{ 
+            headerShown: false,
+            animation: 'slide_from_right',
+            gestureEnabled: true,
+            gestureDirection: 'horizontal',
+          }}
+        >
+          <Stack.Screen name="index" />
+          <Stack.Screen name="register" />
+          <Stack.Screen name="404" />
+        </Stack>
+        <StatusBar style="inverted" />
+      </ThemeProvider>
+    </AppProvider>
   );
 }

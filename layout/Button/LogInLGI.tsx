@@ -1,20 +1,18 @@
-import { ThemedButton } from '@/components/ThemedButton';
-import { router } from 'expo-router';
+import { AnimatedButton } from '@/components/ui/AnimatedButton';
+import { useNavigation } from '@/hooks/useNavigation';
 import { StyleSheet, View } from "react-native";
 
-
-
 const LogInLButton = () => {
+    const { navigateToLogin } = useNavigation();
+    
     return (
         <View>
-
-            <ThemedButton
+            <AnimatedButton
             style={styles.button}
             title="Log In"
             variant="secondary"
-            onPress={() => router.push('/')}
+            onPress={navigateToLogin}
             />
-
         </View>
     );
 };
@@ -24,7 +22,7 @@ const styles = StyleSheet.create({
         width: "120%",
         alignSelf: "center",
         marginTop: 20,
-  },
+    },
 });
 
 export default LogInLButton

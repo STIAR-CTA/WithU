@@ -1,19 +1,19 @@
 import { StyleSheet } from 'react-native';
 
 import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { ScreenContainer } from '@/components/ui/ScreenContainer';
 import { Link, Stack } from 'expo-router';
 
 export default function NotFoundScreen() {
   return (
     <>
     <Stack.Screen options={{ title: 'Oops!' }} />
-      <ThemedView style={styles.container}>
+      <ScreenContainer style={styles.container}>
         <ThemedText type="title">404</ThemedText>
         <Link href="/" style={styles.link}>
           <ThemedText type="link">Go to home screen!</ThemedText>
         </Link>
-      </ThemedView>
+      </ScreenContainer>
     </>
   );
 }

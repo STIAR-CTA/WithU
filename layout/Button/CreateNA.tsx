@@ -1,20 +1,30 @@
-import { Alert, Button, View } from 'react-native';
+import { AnimatedButton } from '@/components/ui/AnimatedButton';
+import { useNavigation } from '@/hooks/useNavigation';
+import { StyleSheet, View } from 'react-native';
 
 const CreateNA = () => {
-  const handlePress = () => {
-    console.log('Кнопка нажата!'); // Смотрите в консоли (Chrome remote debugger)
-    Alert.alert('Тест', 'Кнопка работает!');
-  };
-
+  const { navigateToRegister } = useNavigation();
+  
   return (
-    <View style={{ padding: 20 }}>
-      <Button 
-        title="Тестовая кнопка" 
-        onPress={handlePress} 
-        testID="test-button"
+    <View style={styles.container}>
+      <AnimatedButton
+        style={styles.button}
+        title="Create Account"
+        variant="primary"
+        onPress={navigateToRegister}
       />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+  },
+  button: {
+    width: "100%",
+    alignSelf: "center",
+  },
+});
 
 export default CreateNA;
