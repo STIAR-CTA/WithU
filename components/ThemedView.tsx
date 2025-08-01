@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     position: "absolute",
-    borderTopRightRadius: 50,
-    borderTopLeftRadius: 50,
+    borderTopRightRadius: 60,
+    borderTopLeftRadius: 60,
     bottom: 0,
   },
 });

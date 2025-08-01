@@ -12,10 +12,10 @@ const LineView = () => {
 
 const styles = StyleSheet.create({
     container: {
-        width: "92%",
+        width: "108%",
         height: 1,
-        marginTop: 8,
-        marginBottom: 8,
+        marginTop: 10,
+        marginBottom: 10,
         alignSelf: "center",
     },
 });

@@ -3,11 +3,11 @@ import { StyleSheet, View } from "react-native";
 import { ThemedButton } from '@/components/ThemedButton';
 import { Link } from "expo-router";
 
-const LogInCButton = () => {
+const CreateNA = () => {
     return (
         <View>
-            <Link href="/" style={{ width: "100%", alignItems: "center" }}>
-                <ThemedButton style={styles.button} title="Log In" variant="secondary"/>
+            <Link href="/(tabs)/register" style={{ width: "100%", alignItems: "center" }}>
+                <ThemedButton style={styles.button} title="Create new account" variant="outline"/>
             </Link>
         </View>
     );
@@ -17,7 +17,9 @@ const styles = StyleSheet.create({
     button: {
         width: "100%",
         alignSelf: "center",
+        borderWidth: 2.5,
+        fontSize: 12,
   },
 });
 
-export default LogInCButton
+export default CreateNA

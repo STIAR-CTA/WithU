@@ -4,8 +4,9 @@ import { Slot } from 'expo-router';
 import React, { useEffect, useState } from 'react';
 import { Animated, StyleSheet, View } from 'react-native';
 
+
 export default function Layout() {
-  const [showLoader, setShowLoader] = useState(true);
+  const [showLoader, setShowLoader] = useState(false);
   const fadeAnim = new Animated.Value(1);
 
   useEffect(() => {
@@ -31,10 +32,11 @@ export default function Layout() {
           <Barbox/>
           <Loader/>
         </Animated.View>
-      )}
+      )}    
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {

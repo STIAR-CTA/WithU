@@ -5,7 +5,7 @@ import { ThemedButton } from '@/components/ThemedButton';
 const AcceptButton = () => {
     return (
         <View style={{ marginTop: "20%" }}>
-           <ThemedButton title="Accept"/>
+           <ThemedButton title="Accept" variant="primary"/>
         </View>
     );
 };

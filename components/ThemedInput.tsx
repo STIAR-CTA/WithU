@@ -83,10 +83,12 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     borderWidth: 2.5,
     fontSize: 16,
-    lineHeight: 10,
+    lineHeight: 30,
     fontFamily: "VAG",
     paddingLeft: 20,
     paddingRight: 20,
     paddingBottom: 4,
+    width: "120%",
+    height: 40,
   }
 });

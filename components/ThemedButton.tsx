@@ -52,12 +52,15 @@ const styles = StyleSheet.create({
   button: {
     borderRadius: 50,
     alignItems: "center",
+    width: "120%",
+    alignSelf: "center",
   },
   text: {
-    fontSize: 20,
+    fontSize: 18,
     lineHeight: 30,
     fontFamily: "VAG",
     paddingBottom: 4,
     margin: 3,
+    
   },
 });
