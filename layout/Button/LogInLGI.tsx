@@ -1,11 +1,20 @@
+import { ThemedButton } from '@/components/ThemedButton';
+import { router } from 'expo-router';
 import { StyleSheet, View } from "react-native";
 
-import { ThemedButton } from '@/components/ThemedButton';
+
 
 const LogInLButton = () => {
     return (
         <View>
-           <ThemedButton style={styles.button} title="Log In" variant="secondary"/>
+
+            <ThemedButton
+            style={styles.button}
+            title="Log In"
+            variant="secondary"
+            onPress={() => router.push('/')}
+            />
+
         </View>
     );
 };

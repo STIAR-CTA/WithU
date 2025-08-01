@@ -1,16 +1,12 @@
-import LogIn from "@/components/ui/login";
-import Barbox from "@/layout/BarBox/barbox";
-import { View } from "react-native";
+import LogIn from '@/components/ui/login';
+import Barbox from '@/layout/BarBox/barbox';
+import { View } from 'react-native';
 
-
-export default function Lhom() {
+export default function LogInScreen() {
   return (
     <View style={{ flex: 1 }}>   
       <Barbox/>
       <LogIn/>
-
-      {/*<Register/>*/}
-
     </View>
   );
 }

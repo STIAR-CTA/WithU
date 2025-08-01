@@ -5,6 +5,7 @@ import { ActivityIndicator, StyleSheet, Text, TouchableOpacity } from 'react-nat
 
 type ThemedButtonProps = {
   title: string;
+  onPress: () => void;
   variant?: ButtonVariant;
   disabled?: boolean;
   loading?: boolean;
@@ -14,6 +15,7 @@ type ThemedButtonProps = {
 
 export const ThemedButton = ({
   title,
+  onPress,
   variant = 'primary',
   disabled = false,
   loading = false,
@@ -34,8 +36,6 @@ export const ThemedButton = ({
         },
         style,
       ]}
-      disabled={disabled || loading}
-      activeOpacity={0.7}
     >
       {loading ? (
         <ActivityIndicator color={text} />

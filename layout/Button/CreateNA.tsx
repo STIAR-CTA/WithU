@@ -1,25 +1,20 @@
-import { StyleSheet, View } from "react-native";
-
-import { ThemedButton } from '@/components/ThemedButton';
-import { Link } from "expo-router";
+import { Alert, Button, View } from 'react-native';
 
 const CreateNA = () => {
-    return (
-        <View>
-            <Link href="/(tabs)/register" style={{ width: "100%", alignItems: "center" }}>
-                <ThemedButton style={styles.button} title="Create new account" variant="outline"/>
-            </Link>
-        </View>
-    );
+  const handlePress = () => {
+    console.log('Кнопка нажата!'); // Смотрите в консоли (Chrome remote debugger)
+    Alert.alert('Тест', 'Кнопка работает!');
+  };
+
+  return (
+    <View style={{ padding: 20 }}>
+      <Button 
+        title="Тестовая кнопка" 
+        onPress={handlePress} 
+        testID="test-button"
+      />
+    </View>
+  );
 };
 
-const styles = StyleSheet.create({
-    button: {
-        width: "100%",
-        alignSelf: "center",
-        borderWidth: 2.5,
-        fontSize: 12,
-  },
-});
-
-export default CreateNA
+export default CreateNA;
